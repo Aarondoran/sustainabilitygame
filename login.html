@@ -1,0 +1,55 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="author" content="Aaron doran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+  login
+  </title>
+  <style>
+  body {
+  background-image: url('loginbackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.formdiv {
+background-color: white;
+width: 225px;
+height: 100px;
+padding: 50px;
+border: 2px blue;
+}
+
+</style>
+  </head>
+  <body>
+  <center>
+  <h1>
+  login
+  </h1>
+  <div class="formdiv">
+  <form name="login">
+Username: <input name="id" size="6" type="text">
+</br>
+</br>
+Password: <input name="pass" size="6" type="password">
+</br>
+</br>
+<input value="Login" onclick="pasuser(this.form)" type="button">
+</form>
+</div>
+</center>
+</body>
+<script language="javascript">
+function pasuser(form) { 
+if (form.id.value=="aaron") { 
+if (form.pass.value=="aaroneditlogin") { location="https://sustainabilitygame.netlify.app/logindone.html" } 
+else { alert("Wrong Password") } 
+} 
+else { alert("Wrong Username") } 
+} 
+</script>
+</html>
