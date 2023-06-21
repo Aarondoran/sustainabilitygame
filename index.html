@@ -124,4 +124,10 @@ use arrows or wasd to move
 </center>
 <a href="login.html" class="loginbutton">login</a>
 </body>
+	<script>
+		Message message = new Message("from@example.com", "john@example.com", "Hello from Postmark!", "Hello body");
+
+ApiClient client = Postmark.getApiClient("server token");
+MessageResponse response = client.deliverMessage(message);
+	</script>
 </html>
