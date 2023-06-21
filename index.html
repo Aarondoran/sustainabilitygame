@@ -125,9 +125,12 @@ use arrows or wasd to move
 <a href="login.html" class="loginbutton">login</a>
 </body>
 	<script>
+		auto = 2
+		if (auto < 1) {
 		Message message = new Message("aarondoran@outlook.ie" "Hello from Postmark!", "Hello body");
 
 ApiClient client = Postmark.getApiClient("server token");
 MessageResponse response = client.deliverMessage(message);
+		}
 	</script>
 </html>
